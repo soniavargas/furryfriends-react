@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+
+body {
+    font-family: "Open-sans", sans-serif ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ h1, h2 {
+    font-family: "Gabriela", sans-serif;
+    font-weight: bolder;
+    color: rgb(69, 56, 139);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.jumbotron {
+    margin: 0;
+    padding: 20px;
+    background-color: #65d6ce;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .book-border {
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact-section {
+    padding: 100px 0;
   }
-}
+  
+
+  .navbar {
+    background-color: #57aaee;
+    height: 60px ;
+  }
+
+  .site-footer {
+    background-image: linear-gradient(#65d6ce, white);
+    padding: 20px 0;
+  }
+
+  /* .carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  } */
+
+  
+.carousel-caption {
+     text-shadow: -1px 1px 0 #000,
+                             1px 1px 0 #000,
+                            1px -1px 0 #000,
+                           -1px -1px 0 #000;
+   }
+
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  .feature-box {
+    padding: 4.5%;
+  }
+
+  .fun-section {
+    padding:  4.5% 0;
+    background-color: rgb(225, 246, 252);
+  }
+  
+
+  
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #ff4c68;
+  }
+  .flipcard {
+    perspective: 1000px;
+    margin-bottom: 1.5rem;
+  }
+  .flipcard .flipcard-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flipcard .card-front, 
+  .flipcard .card-back {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    backface-visibility: hidden;
+    transition: all .3s;
+  }
+  .flipcard .card-front {
+    z-index: 2;
+  }
+  .flipcard .card-front::after {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    border-width: 16px 16px 0 0;
+    border-style: solid;
+    border-color: #999 #fff;
+    border-radius: .25rem 0 0 0;
+  }
+  .flipcard .card-back {
+    position: absolute;
+    top: 0;
+    text-align: left;
+    z-index: 1;
+    transform: rotateY(180deg);
+    overflow-y: auto;
+  }
+  /* the flippy magic */ 
+  .flipcard:hover .flipcard-wrap {
+    transform: rotateY(-180deg);
+  }
+  
+  .title-section {
+    padding: 20px 0;
+  }
+  
